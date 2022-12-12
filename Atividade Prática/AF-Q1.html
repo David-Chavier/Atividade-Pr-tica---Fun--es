@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<body>
+    <script>
+        //         Crie uma função que recebe 3 notas de um aluno por parâmetro e
+        // uma letra. Se a letra for A a função deve calcular a média aritmética,
+        // se for P, a média ponderada (peso: 5, 3 e 2).
+        function mediaAouP(n1, n2, n3, letra){
+
+            if(letra == 'A'){
+                console.log((n1 + n2 +n3) / 3);
+            }else if(letra == 'P'){
+                console.log((n1 * 5 + n2 * 3 + n3 * 2) / 10);
+            }else{ 
+                console.log('Letra não permitida')
+            }
+            
+        }
+        
+        mediaAouP(
+            parseInt(prompt('digite o primeiro valor')),
+            parseInt(prompt('digite o segundo valor')),
+            parseInt(prompt('digite o terceiro valor')),
+            prompt('digite a letra para a operação')
+        )
+    </script>
+</body>
+</html>
