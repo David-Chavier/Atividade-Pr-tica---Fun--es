@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    <script>
+
+        //         Crie uma função que recebe um valor inteiro e retorne verdadeiro se
+        // for ímpar ou falso se for par.
+
+        const nuprimo = parseInt(prompt('Digite um número'))
+        document.write(primeNumber(nuprimo))
+
+        function primeNumber(nuprimo){
+            for (var divisor = 2; divisor < nuprimo; divisor++) 
+            if (nuprimo % divisor == 0) return 'Falso';
+            return 'Verdadeiro';
+        }
+    </script>
+</body>
+</html>

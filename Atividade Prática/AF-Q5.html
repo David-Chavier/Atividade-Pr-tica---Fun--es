@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+</head>
+<body>
+    <script>
+
+        //         Crie uma função que recebe um valor inteiro e retorne verdadeiro se
+        // é um valor perfeito ou falso se não for. Um valor é dito perfeito
+        // quando ele é igual a soma dos seus divisores excetuando ele
+        // próprio.
+        // Ex: 6 é perfeito, pois 6 = 1 + 2 + 3, que são seus divisores
+        
+        const num = parseInt(prompt('Digite um valor'))
+        
+        function perfeito(num) {
+            let soma = 0
+            for (let i = 1; i < num; i++) {
+                if (num % i == 0) {
+                    soma += i
+                }
+            }
+            if (soma == num) {
+                console.log('é perfeito')
+                return 'Verdadeiro'
+            }
+            else {
+                console.log('não é perfeito')
+                return 'falso'
+            }
+        }
+        document.write(perfeito(num))
+
+    </script>
+</body>
+</html>
